@@ -1,0 +1,94 @@
+WARN ME
+=======
+
+version 2.1
+
+Copyright (C) 2021 António Manuel Dias
+
+contact: ammdias@gmail.com
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+### Changes history
+
+* 2.1 (2021-02-27): Small changes to publish on GitHub.
+* 2.0 (2019-10-13): Complete rewrite, integrating Warn me Portable and
+                    removing GTK requirement. If `at` and `notify-send` are
+                    available, it may be used from the terminal.  If not,
+                    it will work in standalone GUI mode using Tkinter.
+                    Added recurrent alarm possibility (repeat function).
+* 1.0 (2014-02-23): Complete rewrite using GTK3, GObject, Python >= 3.3,
+                    and POSIX at
+* 0.6 (2012-02-09): fixed time format problem in fmttm()
+                    reported by António Lima
+* 0.5 (2012-02-05): code cleanup, several fixes,
+                    regeneration of icon cache on installation
+* 0.4 (2012-02-02): changed notification summary to 'Warn Me'
+                    (requested by António Lima)
+* 0.3 (2012-01-31): added zenity dialog, i18n, pt_PT locale
+                    and freedesktop.org menu and icons
+* 0.2 (2012-01-26): added 'message in xx seconds' notification
+                    added error notifications
+                    added notification function: nwarn()
+
+
+ABOUT THE PROGRAM
+-----------------
+
+This is a simple alarm notifier to be used from the terminal window
+that uses freedesktop.org `notify-send` to alert users of timed events
+set by POSIX utility `at`.
+
+If any of those utilities are not available the program will launch
+a simple graphical interface (GUI) and use Python Timer to set the
+notification events.  This interface may also be used, at the user
+option, even if `at` and `notify-send` are available.
+
+Depends on [Python 3.3+](https://https://www.python.org/). GUI uses
+[Python Tkinter](https://docs.python.org/3/library/tkinter.html).
+
+
+USAGE
+-----
+
+### Linux and Unix-like systems:
+
+To install the program in your home bin directory, so that you may use it
+typing `warnme` or `gwarme` in a terminal:
+
+1. Open a terminal in the directory containing the downloaded compressed file.
+
+2. To install for a single user, type the following command:
+
+       $ bash local_install.sh
+
+   To install for all the users on the system:
+
+       $ bash global_install.sh
+
+3. For further instructions, type:
+
+       $ warnme --help
+
+4. To launch the graphical user interface, type:
+
+       $ gwarnme
+
+
+### Other systems:
+
+After download, unzip the file and run the program 'gwarnme.py'
+using Python 3.  Read the program's help for further instructions on
+how to use it.

@@ -1,0 +1,527 @@
+# Warn Me Translation template.
+# Copyright (C) 2021 António Manuel Dias
+# António Manuel Dias <ammdias@gmail.com>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.1\n"
+"POT-Creation-Date: 2021-02-27 11:50+0000\n"
+"PO-Revision-Date: 2021-02-27 11:56+0000\n"
+"Last-Translator: António Manuel Dias <ammdias@gmail.com>\n"
+"Language-Team: pt_PT <ammdias>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: gwarnme.py:78 warnme.py:109
+msgid "Standard notification"
+msgstr "Notificação padrão"
+
+#: gwarnme.py:138
+msgid ", repeat every %d minutes"
+msgstr ", repete a cada %d minutos"
+
+#: gwarnme.py:174
+msgid "About"
+msgstr "Sobre"
+
+#: gwarnme.py:245
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: gwarnme.py:249
+msgid "_Manual"
+msgstr "_Manual"
+
+#: gwarnme.py:250
+msgid "F1"
+msgstr "F1"
+
+#: gwarnme.py:255
+msgid "_About"
+msgstr "_Sobre"
+
+#: gwarnme.py:258
+msgid "_Warranty"
+msgstr "_Garantia"
+
+#: gwarnme.py:262
+msgid "_Copyright"
+msgstr "_Licença"
+
+#: gwarnme.py:268
+msgid "_Quit"
+msgstr "Sai_r"
+
+#: gwarnme.py:269
+msgid "CTRL+Q"
+msgstr "CTRL+Q"
+
+#: gwarnme.py:272
+msgid "<Control-Key-q>"
+msgstr "<Control-Key-q>"
+
+#: gwarnme.py:273
+msgid "<Key-F1>"
+msgstr "<Key-F1>"
+
+#: gwarnme.py:286
+msgid "Set alarm in"
+msgstr "Alarme daqui a"
+
+#: gwarnme.py:298 gwarnme.py:349
+msgid "minutes"
+msgstr "minutos"
+
+#: gwarnme.py:302
+msgid "Set alarm at"
+msgstr "Alarme às"
+
+#: gwarnme.py:326
+msgid "hours"
+msgstr "horas"
+
+#: gwarnme.py:330
+msgid "Message:"
+msgstr "Mensagem:"
+
+#: gwarnme.py:340
+msgid "Repeat every"
+msgstr "Repetir a cada"
+
+#: gwarnme.py:353
+msgid "Set alarm"
+msgstr "Activar alarme"
+
+#: gwarnme.py:361
+msgid "Pending alarms:"
+msgstr "Alarmes pendentes:"
+
+#: gwarnme.py:375
+msgid "Remove alarm"
+msgstr "Remover alarme"
+
+#: gwmtext.py:67
+msgid "Close"
+msgstr "Fechar"
+
+#: warnme.py:74
+msgid "'at/atq/atrm' utilities not available."
+msgstr "Utilitários 'at/atq/atrm' não disponíveis."
+
+#: warnme.py:87
+msgid "'notify-send' utility not available."
+msgstr "Utilitário 'notify-send' não disponível."
+
+#: warnme.py:101
+msgid "HH:MM"
+msgstr "HH:MM"
+
+#: warnme.py:102
+msgid "hour and minute for the warning."
+msgstr "hora e minuto do alarme."
+
+#: warnme.py:105 warnme.py:113
+msgid "MINUTES"
+msgstr "MINUTOS"
+
+#: warnme.py:106
+msgid "interval for the warning."
+msgstr "intervalo para o alarme."
+
+#: warnme.py:110
+msgid "Notification text."
+msgstr "Texto da notificação."
+
+#: warnme.py:114
+msgid "repeat interval."
+msgstr "intervalo de repetição."
+
+#: warnme.py:117
+msgid "list set alarms."
+msgstr "listar alarmes ativos."
+
+#: warnme.py:120
+msgid "ALARM"
+msgstr "ALARME"
+
+#: warnme.py:121
+msgid "delete alarm by index."
+msgstr "remover alarme por índice."
+
+#: warnme.py:124
+msgid "launch graphical user interface."
+msgstr "lançar interface gráfico."
+
+#: warnme.py:127
+msgid "show copyright information."
+msgstr "mostrar licença de utilização."
+
+#: warnme.py:130
+msgid "show warranty information."
+msgstr "mostrar garantia."
+
+#: warnme.py:133
+msgid "show version information."
+msgstr "mostrar versão do programa."
+
+#: warnme.py:144
+msgid ""
+"Proceeding in stand-alone mode:\n"
+"closing the GUI will delete all alarms."
+msgstr ""
+"Prosseguindo em modo autónomo:\n"
+"fechar o programa removerá todos os alarmes."
+
+#: warnme.py:165
+msgid "Alarm removed."
+msgstr "Alarme removido."
+
+#: warnme.py:167
+msgid "Alarm not found."
+msgstr "Alarme não encontrado."
+
+#: warnme.py:170 warnme.py:177
+msgid "Conflicting options: '--at/--in'"
+msgstr "Opções conflituantes: '--at/--in'"
+
+#: warnme.py:171 warnme.py:178
+msgid "Alarm set:"
+msgstr "Alarme configurado:"
+
+#: warnme.py:174 warnme.py:181
+msgid "Repeat every {} minutes."
+msgstr "Repetir a cada {} minutos."
+
+#: wmat.py:55
+msgid "cannot create alarm list file."
+msgstr "não foi possível criar o ficheiro da lista de alarmes."
+
+#: wmat.py:67
+msgid "could not append alarm to alarm list file."
+msgstr "não foi possível adicionar o alarme ao ficheiro de alarmes."
+
+#: wmat.py:91
+msgid "could not parse 'at' response."
+msgstr "não foi possível processar resposta do programa 'at'."
+
+#: wmat.py:168
+msgid "corrupted alarm list file."
+msgstr "ficheiro de alarmes corrompido."
+
+#: wmat.py:177
+msgid "could not write to alarm list file."
+msgstr "não foi possível guardar o ficheiro da lista de alarmes."
+
+#: wmcommon.py:42
+msgid "Error:"
+msgstr "Erro:"
+
+#: wmtext.py:83
+msgid ""
+"From the Preamble of the GNU General Public License:\n"
+"        \n"
+"The GNU General Public License is a free, copyleft license for\n"
+"software and other kinds of works.\n"
+"\n"
+"The licenses for most software and other practical works are designed\n"
+"to take away your freedom to share and change the works.  By contrast,\n"
+"the GNU General Public License is intended to guarantee your freedom to\n"
+"share and change all versions of a program--to make sure it remains free\n"
+"software for all its users.  We, the Free Software Foundation, use the\n"
+"GNU General Public License for most of our software; it applies also to\n"
+"any other work released this way by its authors.  You can apply it to\n"
+"your programs, too.\n"
+"\n"
+"When we speak of free software, we are referring to freedom, not\n"
+"price.  Our General Public Licenses are designed to make sure that you\n"
+"have the freedom to distribute copies of free software (and charge for\n"
+"them if you wish), that you receive source code or can get it if you\n"
+"want it, that you can change the software or use pieces of it in new\n"
+"free programs, and that you know you can do these things.\n"
+"\n"
+"To protect your rights, we need to prevent others from denying you\n"
+"these rights or asking you to surrender the rights.  Therefore, you have\n"
+"certain responsibilities if you distribute copies of the software, or if\n"
+"you modify it: responsibilities to respect the freedom of others.\n"
+"\n"
+"For example, if you distribute copies of such a program, whether\n"
+"gratis or for a fee, you must pass on to the recipients the same\n"
+"freedoms that you received.  You must make sure that they, too, receive\n"
+"or can get the source code.  And you must show them these terms so they\n"
+"know their rights.\n"
+"\n"
+"See the file LICENSE on the program's directory for more details.\n"
+"If it's missing please refer to http://www.gnu.org/licenses/gpl.txt\n"
+msgstr ""
+"Do Preâmbulo da Licença Pública Geral GNU:\n"
+"        \n"
+"A Licença Pública Geral GNU é uma licença livre para software e outros\n"
+"tipos de trabalhos.\n"
+"\n"
+"As licenças da maioria do software e outros trabalhos práticos são\n"
+"elaboradas de forma a suprimir a liberdade de os partilhar e modificar.\n"
+"Pelo contrário, a Licença Pública Geral GNU visa garantir a liberdade\n"
+"de partilhar e modificar todas as versões de um programa para assegurar\n"
+"que o software permaneça livre para todos os seus utilizadores.  Nós, na\n"
+"Free Software Foundation, usamos a Licença Pública Geral GNU para a maioria\n"
+"do nosso software; também se aplica a qualquer outra obra distribuída desta\n"
+"forma pelos seus autores.  Pode aplicá-la igualmente aos seus programas.\n"
+"\n"
+"Quando falamos de software livre referimo-nos à liberdade, não ao preço.\n"
+"As nossas Licenças Públicas Gerais visam garantir-lhe a liberdade de\n"
+"distribuir cópias de software livre (e cobrar por isso se desejar), que\n"
+"receba o código-fonte ou o possa obter se desejar, que o possa modificar\n"
+"ou usar partes dele em novos programas livres; e que esteja ciente de que\n"
+"o pode fazer.\n"
+"\n"
+"Para proteger os seus direitos necessitamos de evitar que alguém lhos negue\n"
+"ou solicite que lhes renuncie.  Assim, tem determinadas responsabilidades\n"
+"no caso de distribuir cópias do software ou se o modificar.\n"
+"\n"
+"Por exemplo, se distribuir cópias de um programa assim licenciado, seja\n"
+"gratuitamente ou mediante pagamento, terá de conceder aos receptores os\n"
+"direitos que possui.  Terá de garantir que, também eles, recebam ou possam\n"
+"obter o código-fonte.  E terá a obrigação de lhes mostrar estes termos,\n"
+"para que conheçam os seus direitos.\n"
+"\n"
+"Consulte o ficheiro 'gpl.txt' na directoria do programa para mais detalhes.\n"
+"Se não o encontrar, por favor consulte a licença em\n"
+"http://www.gnu.org/licenses/gpl.txt\n"
+
+#: wmtext.py:119
+msgid ""
+"From the GNU General Public License:\n"
+"    \n"
+"15. Disclaimer of Warranty.\n"
+"\n"
+"THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\n"
+"APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE\n"
+"COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\"\n"
+"WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING,\n"
+"BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\n"
+"FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY\n"
+"AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE PROGRAM PROVE\n"
+"DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR\n"
+"CORRECTION.\n"
+"\n"
+"16. Limitation of Liability.\n"
+"\n"
+"IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n"
+"WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR\n"
+"CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\n"
+"INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES\n"
+"ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT\n"
+"NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES\n"
+"SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO\n"
+"OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY\n"
+"HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n"
+msgstr ""
+"Da Licença Pública Geral GNU:\n"
+"\n"
+"15. Exclusão de Garantia.\n"
+"\n"
+"NÃO HÁ QUALQUER GARANTIA PARA O PROGRAMA, NO LIMITE PERMITIDO PELA LEI\n"
+"APLICÁVEL.  EXCEPTO QUANDO DE OUTRA FORMA ESTABELECIDO POR ESCRITO, OS\n"
+"TITULARES DOS DIREITOS DE AUTOR E/OU OUTRAS PARTES, FORNECEM O PROGRAMA\n"
+"\"COMO ESTÁ\", SEM GARANTIA DE QUALQUER TIPO, TANTO EXPRESSA COMO\n"
+"IMPLÍCITA, INCLUINDO, ENTRE OUTRAS, AS GARANTIAS IMPLÍCITAS DE\n"
+"COMERCIABILIDADE E ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. O RISCO QUANTO\n"
+"À QUALIDADE E DESEMPENHO DO PROGRAMA É SEU. CASO O PROGRAMA CONTENHA\n"
+"DEFEITOS, O UTILIZADOR ARCARÁ COM OS CUSTOS DE TODOS OS SERVIÇOS,\n"
+"REPARAÇÕES OU CORREÇÕES NECESSÁRIAS.\n"
+"\n"
+"16. Limites de Responsabilidade.\n"
+"\n"
+"EM NENHUMA CIRCUNSTÂNCIA, A MENOS QUE EXIGIDO PELA LEI APLICÁVEL OU SEJA\n"
+"ACORDADO POR ESCRITO, QUALQUER TITULAR DE DIREITOS DE AUTOR OU QUALQUER\n"
+"OUTRA PARTE QUE ALTERE E/OU FORNEÇA O PROGRAMA CONFORME PERMITIDO ACIMA,\n"
+"SERÁ RESPONSÁVEL PELOS DANOS DO UTILZIADOR, INCLUINDO ENTRE OUTROS,\n"
+"QUAISQUER DANOS GERAIS, ESPECIAIS, FORTUITOS OU EMERGENTES, RESULTANTES\n"
+"DO USO OU IMPOSSIBILIDADE DE USO DO PROGRAMA (INCLUINDO, ENTRE OUTROS,\n"
+"PERDAS DE DADOS OU DADOS GERADOS DE FORMA IMPRECISA, PERDAS SOFRIDAS\n"
+"PELO UTILIZADOR OU TERCEIROS OU A IMPOSSIBILIDADE DO PROGRAMA DE OPERAR\n"
+"COM QUAISQUER OUTROS PROGRAMAS), MESMO QUE ESSE TITULAR OU OUTRA PARTE,\n"
+"TENHA SIDO ALERTADA SOBRE A POSSIBILIDADE DE OCORRÊNCIA DESSES DANOS.\n"
+
+#: wmtext.py:146
+msgid ""
+"\n"
+"Warn me\n"
+"\n"
+"Copyright (C) 2021 António Manuel Dias\n"
+"contact: ammdias@gmail.com\n"
+"\n"
+"This program comes with ABSOLUTELY NO WARRANTY;  for details use command\n"
+"'warnme.py --warranty' or go to 'Help > Warranty' on the graphical user\n"
+"interface.\n"
+"\n"
+"This is free software, and you are welcome to redistribute it under certain\n"
+"conditions; use command 'warnme.py --copyright' or go to 'Help > Copyright' on\n"
+"the graphical user interface for details.\n"
+"\n"
+"----\n"
+"\n"
+"Warn me is a program to set timed desktop notifications.  It may be used from\n"
+"the command line if the POSIX 'at' and the freedesktop.org 'notify-send'\n"
+"utilities are available.  If not or if you prefer to use a graphical interface\n"
+"the program may be used that way with no other dependencies except Python 3\n"
+"with Tkinter module.\n"
+"\n"
+"\n"
+"Graphical User Interface\n"
+"========================\n"
+"\n"
+"The program's graphical user interface may be launched in the following ways:\n"
+"\n"
+"* Launch the 'gwarnme.py' program;\n"
+"* Launch the 'warnme.py' program with the '--gui' option;\n"
+"* Trying to use the 'warnme.py' program in a system without either the POSIX\n"
+"  'at' or the freedesktop.org 'notify-send' utilities.\n"
+"\n"
+"You may set an alarm in one of these ways:\n"
+"\n"
+"* Set alarm to fire in a specified interval in minutes:\n"
+"  - click \"Set alarm in\"\n"
+"  - choose the number of minutes\n"
+"  - type the desired alarm notification message\n"
+"  - if you wish, set the recurrence interval of the alarm, in minutes\n"
+"  - press \"Set alarm\" button\n"
+"\n"
+"* Set alarm to fire at specified time:\n"
+"  - click \"Set alarm at\"\n"
+"  - choose the hour and minute\n"
+"  - type the desired alarm notification message\n"
+"  - if you wish, set the recurrence interval of the alarm, in minutes\n"
+"  - press \"Set Alarm\" button\n"
+"\n"
+"To remove an alarm, select it on the list of pending alarms and press the\n"
+"\"Remove alarm\" button.  You may select several alarms simultaneously.\n"
+"\n"
+"All notifications will be lost if you close the program.\n"
+"\n"
+"Command Line Interface\n"
+"======================\n"
+"\n"
+"Command line interface (terminal) accepted commands and syntax:\n"
+"\n"
+"* Set alarm at specified interval in minutes:\n"
+"  warnme.py --in <minutes> [--text <message>]\n"
+"\n"
+"* Set alarm at specific time:\n"
+"  warnme.py --at <hour:minute> [--text <message>]\n"
+"\n"
+"* For each of the previous commands, you may also set the recurrence of the\n"
+"  alarms, in minutes:\n"
+"  warnme.py --in <minutes> [--text <message>] --repeat <minutes>\n"
+"  warnme.py --at <hour:minute> [--text <message>] --repeat <minutes>\n"
+"\n"
+"* Show list of alarm IDs and descriptions:\n"
+"  warnme.py --list\n"
+"  \n"
+"* Remove alarm identified by alarm ID:\n"
+"  warnme.py --delete <alarm ID>\n"
+"\n"
+"* Start the graphical user interface:\n"
+"  warnme.py --gui\n"
+"\n"
+"* Print Help, Warranty, Copyright and version information on the terminal:\n"
+"  warnme.py --help\n"
+"  warnme.py --warranty\n"
+"  warnme.py --copyright\n"
+"  warnme.py --version\n"
+"  \n"
+"* Test notification interface:\n"
+"  wmnotify.py <message>\n"
+msgstr ""
+"\n"
+"Warn me\n"
+"\n"
+"Copyright (C) 2019 António Manuel Dias\n"
+"contacto: ammdias@gmail.com\n"
+"\n"
+"Este programa é distribuído SEM QUALQUER GARANTIA;  para mais detalhes use o\n"
+"comando 'warnme.py --warranty' ou use 'Ajuda > Garantia' na interface\n"
+"gráfica.\n"
+"\n"
+"Este programa é software livre e pode ser redistribuído sob determinadas\n"
+"condições;  use o comando 'warnme.py --copyright' ou use 'Ajuda > Licença'\n"
+"na interface gráfica para mais detalhes.\n"
+"\n"
+"----\n"
+"\n"
+"Warn me é um programa para mostrar notificações temporizadas no ambiente de\n"
+"trabalho.  Pode ser usado a partir da linha de comando em ambientes onde os\n"
+"utilitários 'at' (POSIX) e 'notify-send' (freedesktop.org) estejam\n"
+"disponíveis.  Em caso contrário, ou se preferir usar uma interface gráfica,\n"
+"o programa pode ser usado dessa forma sem nenhuma dependência para além de\n"
+"Python 3 com o módulo Tkinter.\n"
+"\n"
+"\n"
+"Interface Gráfica\n"
+"=================\n"
+"\n"
+"A interface gráfica pode ser iniciada das seguintes formas:\n"
+"\n"
+"* Correr o programa 'gwarme.py';\n"
+"* Correr o programa 'warnme.py' com a opção '--gui';\n"
+"* Tentar correr o programa 'warnme.py' num sistema sem qualquer um dos\n"
+"  utilitários 'at' (POSIX) ou 'notify-send' (freedesktop.org).\n"
+"\n"
+"Para programar um alarme, use uma das seguintes formas:\n"
+"\n"
+"* Programar um alarme para um determinado intervalo em minutos:\n"
+"  - clicar \"Alarme daqui a\"\n"
+"  - escolher o número de minutos\n"
+"  - escrever a mensagem de notificação desejada\n"
+"  - se desejar, programar a recorrência do alarme, em minutos\n"
+"  - clicar o botão \"Ativar alarme\"\n"
+"\n"
+"* Programar alarme para uma determinada hora:\n"
+"  - clicar \"Alarme às\"\n"
+"  - escolher a hora e minuto\n"
+"  - escrever a mensagem de notificação desejada\n"
+"  - se desejar, programar a recorrência do alarme, em minutos\n"
+"  - clicar o botão \"Ativar alarme\"\n"
+"\n"
+"Para remover um alarme, selecione-o na lista de alarmes pendentes e clique\n"
+"o botão \"Remover alarme\".  Pode selecionar vários alarmes em simultâneo.\n"
+"\n"
+"Ao fechar o programa, todas as notificações serão removidas.\n"
+"\n"
+"Interface de Linha de Comando\n"
+"=============================\n"
+"Comandos da interface de linha de comando (terminal) e sua sintaxe:\n"
+"\n"
+"* Programar um alarme para um determinado intervalo, em minutos:\n"
+"  warnme.py --in <minutos> [--text <mensagem>]\n"
+"\n"
+"* Programar um alarme para uma determinada hora:\n"
+"  warnme.py --at <hora:minuto> [--text <mensagem>]\n"
+"\n"
+"* Para cada um dos comandos anteriores, pode também programar a recorrência\n"
+"  dos alarmes, em minutos:\n"
+"  warnme.py --in <minutos> [--text <mensagem>] --repeat <minutos>\n"
+"  warnme.py --at <hora:minuto> [--text <mensagem>] --repeat <minutos>\n"
+"\n"
+"* Mostrar a lista dos identificadores (ID) dos alarmes e suas descrições:\n"
+"  warnme.py --list\n"
+"  \n"
+"* Remover alarme identificado pelo seu identificador:\n"
+"  warnme.py --delete <ID do alarme>\n"
+"\n"
+"* Iniciar a interface gráfica:\n"
+"  warnme.py --gui\n"
+"\n"
+"* Mostrar informação sobre a Ajuda, Garantia, Licença e versão no terminal:\n"
+"  warnme.py --help\n"
+"  warnme.py --warranty\n"
+"  warnme.py --copyright\n"
+"  warnme.py --version\n"
+"  \n"
+"* Testar interface de notificação:\n"
+"  wmnotify.py <mensagem>\n"
+
+
