@@ -56,7 +56,7 @@ a simple graphical interface (GUI) and use Python Timer to set the
 notification events.  This interface may also be used, at the user
 option, even if `at` and `notify-send` are available.
 
-Depends on [Python 3.3+](https://https://www.python.org/). GUI uses
+Depends on [Python 3.3+](https://www.python.org/). GUI uses
 [Python Tkinter](https://docs.python.org/3/library/tkinter.html).
 
 
