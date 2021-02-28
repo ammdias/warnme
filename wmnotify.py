@@ -18,14 +18,15 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
-__version__ = '2.1'
-__date__ = '2021-02-27'
+__version__ = '2.2'
+__date__ = '2021-02-28'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
 
 #------------------------------------------------------------------------------
 # Changes history:
+#  2.2 (2021-02-28): removed unneeded string (short copyright text)
 #  2.1 (2021-02-27): publishing in GitHub
 #  2.0 (2019-10-13): first version
 
@@ -33,7 +34,7 @@ __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 import argparse
 import subprocess
 
-from wmtext import WARNME_VERSION, WARNME_SHORT_COPYRIGHT, WARNME_NAME
+from wmtext import WARNME_VERSION, WARNME_NAME
 from wmtext import _
 
 

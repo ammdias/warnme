@@ -17,14 +17,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-__version__ = '2.1'
-__date__ = '2021-02-27'
+__version__ = '2.2'
+__date__ = '2021-02-28'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
 
 #------------------------------------------------------------------------------
 # Changes history:
+#    2.2 (2021-02-28): changed version text
 #    2.1 (2021-02-27): publishing in GitHub
 #    2.0 (2019-10-01): updated to version 2.0
 #  1.0.1 (2019-09-07): updated version number and date
@@ -57,7 +58,7 @@ def labelUnderline(label):
 # Help text
 
 WARNME_NAME = 'Warn me'
-WARNME_VERSION = '2.1'
+WARNME_VERSION = '2.2'
 WARNME_WEBSITE = 'https://ammdias.duckdns.org/downloads'
 WARNME_WEBSITE_LABEL = 'AMMDIAS'
 WARNME_SHORT_COPYRIGHT = '''Timed notification program

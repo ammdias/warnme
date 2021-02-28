@@ -17,14 +17,15 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
-__version__ = '2.1'
-__date__ = '2021-02-27'
+__version__ = '2.2'
+__date__ = '2021-02-28'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
 
 #------------------------------------------------------------------------------
 # Changes history:
+#    2.2 (2021-02-28): changed place of alarm list for multi-user use
 #    2.1 (2021-02-27): publishing in GitHub
 #    2.0 (2019-10-13): rewrite for Warn Me 2.0
 #  1.0.1 (2019-09-07): moved config directory into .config
@@ -43,9 +44,13 @@ from wmcommon import error
 #------------------------------------------------------------------------------
 # Path related constants
 WARNME_DIR = os.path.dirname(__file__)
-WARNME_ALARM_LIST = os.path.join(WARNME_DIR, 'alarmlist')
 WARNME_NOTIFY = os.path.join(WARNME_DIR, 'wmnotify.py')
 
+user_dir = os.path.expanduser(os.path.join('~', '.config'))
+if os.path.exists(user_dir):
+    WARNME_ALARM_LIST = os.path.join(user_dir, 'warnme_alarms')
+else:
+    WARNME_ALARM_LIST = os.path.expanduser(os.path_join('~', '.warnme_alarms'))
 
 # Check if alarm list file exists, create it if not
 try:
