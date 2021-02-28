@@ -26,7 +26,7 @@ __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
 #------------------------------------------------------------------------------
 # Changes history:
-#  2.2 (2021-02-28): changed directory of alarm list file, for multi-user use
+#  2.2 (2021-02-28): relocated 'at' alarm list for multi-user usage
 #  2.1 (2021-02-27): publishing in GitHub
 #  2.0 (2019-10-13): Complete rewrite using Tkinter interface
 #                    from previous portable version (terminated)
