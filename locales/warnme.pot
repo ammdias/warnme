@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-27 11:50+0000\n"
+"POT-Creation-Date: 2021-02-28 17:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: gwarnme.py:78 warnme.py:109
+#: gwarnme.py:78 warnme.py:110
 msgid "Standard notification"
 msgstr ""
 
@@ -107,109 +107,109 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: warnme.py:74
+#: warnme.py:75
 msgid "'at/atq/atrm' utilities not available."
 msgstr ""
 
-#: warnme.py:87
+#: warnme.py:88
 msgid "'notify-send' utility not available."
 msgstr ""
 
-#: warnme.py:101
+#: warnme.py:102
 msgid "HH:MM"
 msgstr ""
 
-#: warnme.py:102
+#: warnme.py:103
 msgid "hour and minute for the warning."
 msgstr ""
 
-#: warnme.py:105 warnme.py:113
+#: warnme.py:106 warnme.py:114
 msgid "MINUTES"
 msgstr ""
 
-#: warnme.py:106
+#: warnme.py:107
 msgid "interval for the warning."
 msgstr ""
 
-#: warnme.py:110
+#: warnme.py:111
 msgid "Notification text."
 msgstr ""
 
-#: warnme.py:114
+#: warnme.py:115
 msgid "repeat interval."
 msgstr ""
 
-#: warnme.py:117
+#: warnme.py:118
 msgid "list set alarms."
 msgstr ""
 
-#: warnme.py:120
+#: warnme.py:121
 msgid "ALARM"
 msgstr ""
 
-#: warnme.py:121
+#: warnme.py:122
 msgid "delete alarm by index."
 msgstr ""
 
-#: warnme.py:124
+#: warnme.py:125
 msgid "launch graphical user interface."
 msgstr ""
 
-#: warnme.py:127
+#: warnme.py:128
 msgid "show copyright information."
 msgstr ""
 
-#: warnme.py:130
+#: warnme.py:131
 msgid "show warranty information."
 msgstr ""
 
-#: warnme.py:133
+#: warnme.py:134
 msgid "show version information."
 msgstr ""
 
-#: warnme.py:144
+#: warnme.py:145
 msgid ""
 "Proceeding in stand-alone mode:\n"
 "closing the GUI will delete all alarms."
 msgstr ""
 
-#: warnme.py:165
+#: warnme.py:166
 msgid "Alarm removed."
 msgstr ""
 
-#: warnme.py:167
+#: warnme.py:168
 msgid "Alarm not found."
 msgstr ""
 
-#: warnme.py:170 warnme.py:177
+#: warnme.py:171 warnme.py:178
 msgid "Conflicting options: '--at/--in'"
 msgstr ""
 
-#: warnme.py:171 warnme.py:178
+#: warnme.py:172 warnme.py:179
 msgid "Alarm set:"
 msgstr ""
 
-#: warnme.py:174 warnme.py:181
+#: warnme.py:175 warnme.py:182
 msgid "Repeat every {} minutes."
 msgstr ""
 
-#: wmat.py:55
+#: wmat.py:60
 msgid "cannot create alarm list file."
 msgstr ""
 
-#: wmat.py:67
+#: wmat.py:72
 msgid "could not append alarm to alarm list file."
 msgstr ""
 
-#: wmat.py:91
+#: wmat.py:96
 msgid "could not parse 'at' response."
 msgstr ""
 
-#: wmat.py:168
+#: wmat.py:173
 msgid "corrupted alarm list file."
 msgstr ""
 
-#: wmat.py:177
+#: wmat.py:182
 msgid "could not write to alarm list file."
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "Error:"
 msgstr ""
 
-#: wmtext.py:83
+#: wmtext.py:84
 msgid ""
 "From the Preamble of the GNU General Public License:\n"
 "        \n"
@@ -255,7 +255,7 @@ msgid ""
 "If it's missing please refer to http://www.gnu.org/licenses/gpl.txt\n"
 msgstr ""
 
-#: wmtext.py:119
+#: wmtext.py:120
 msgid ""
 "From the GNU General Public License:\n"
 "    \n"
@@ -284,7 +284,7 @@ msgid ""
 "HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n"
 msgstr ""
 
-#: wmtext.py:146
+#: wmtext.py:147
 msgid ""
 "\n"
 "Warn me\n"
