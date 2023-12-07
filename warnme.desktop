@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=2.3
+Name=Warn Me
+GenericName=Warn Me
+Comment=Alarm / Notifier
+Exec=gwarnme
+Icon=warnme
+Type=Application
+Categories=Utility;
+
