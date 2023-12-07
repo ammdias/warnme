@@ -5,7 +5,8 @@ Warn Me
 
 Changes list:
 
-    * 2.3 (2023-12-03): Changed linux installation scripts.
+    * 2.3 (2023-12-07): Added uninstall option.
+                        Changed linux installation scripts.
                         Changed README and LICENSE files to Markdown.
 
     * 2.2 (2021-02-28): Relocated 'at' alarm list for multi-user usage.
