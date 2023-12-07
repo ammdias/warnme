@@ -1,6 +1,6 @@
 WARN ME
 =======
-version 2.3
+version 2.3.1
 
 Copyright (C) 2012 António Manuel Dias
 

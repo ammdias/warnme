@@ -3,8 +3,8 @@
 
 DOC = 'Installation script for Warn Me.'''
 COPYRIGHT_YEAR = '2012'
-VERSION = '2.3'
-DATE = '2023-12-07'
+VERSION = '2.3.1'
+DATE = '#TODO'
 AUTHOR = 'António Manuel Dias <ammdias@gmail.com>'
 LICENSE = '''
 This program is free software: you can redistribute it and/or modify

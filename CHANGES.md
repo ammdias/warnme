@@ -5,6 +5,8 @@ Warn Me
 
 Changes list:
 
+    * 2.3.1 (23-12-07): Corrected some bugs in uninstall.
+ 
     * 2.3 (2023-12-07): Added uninstall option.
                         Changed linux installation scripts.
                         Changed README and LICENSE files to Markdown.
