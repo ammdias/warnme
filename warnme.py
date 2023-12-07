@@ -1,9 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 """Warn Me
 
 Timed notification program
-(C) 2021 António Manuel Dias
+(C) 2012 António Manuel Dias
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,37 +18,10 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
-__version__ = '2.2'
-__date__ = '2021-02-28'
+__version__ = '2.3'
+__date__ = '2023-12-07'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
-
-
-#------------------------------------------------------------------------------
-# Changes history:
-#  2.2 (2021-02-28): relocated 'at' alarm list for multi-user usage
-#  2.1 (2021-02-27): publishing in GitHub
-#  2.0 (2019-10-13): Complete rewrite using Tkinter interface
-#                    from previous portable version (terminated)
-#                    focus on terminal usage in Linux, using POSIX 'at'
-#                      and freedesktop.org 'notify-send' utilities
-#                    added possibility of recurrent alarms (repeat)
-#
-#  1.0.1 (2019-09-07): require correct GTK/Notify versions from GI library
-#  1.0 (2014-02-23): Complete rewrite using GTK3, GObject and Python >= 3.3
-#
-#  0.7 (2012-02-22): added icon to notification
-#  0.6 (2012-02-09): fixed time format problem in fmttm()
-#                      reported by António Lima
-#  0.5 (2012-02-05): added time format function: fmttm()
-#                      some code clean up
-#  0.4 (2012-02-02): changed notification summary to 'Warn Me'
-#                    (requested by António Lima)
-#  0.3 (2012-01-31): added zenity dialog, i18n, pt_PT locale
-#                      and freedesktop.org menu and icons
-#  0.2 (2012-01-26): added 'message in xx seconds' notification
-#                    added error notifications
-#                    added notification function: nwarn()
 
 
 import sys
@@ -133,6 +106,9 @@ def arguments():
     parser.add_argument("-v", "--version", action="store_true",
                         help=_('show version information.'))
 
+    parser.add_argument("--uninstall", action="store_true",
+                        help=_('uninstall application.'))
+
     
     return parser, parser.parse_args()
 
@@ -141,7 +117,10 @@ def arguments():
 # process arguments
 parser, args = arguments()
 
-if args.gui or not checkAt() or not checkNotify():
+if args.uninstall:
+    from UNINSTALL import uninstall
+    uninstall()
+elif args.gui or not checkAt() or not checkNotify():
     print(_("Proceeding in stand-alone mode:\n"
             "closing the GUI will delete all alarms."))
     from gwarnme import gstart

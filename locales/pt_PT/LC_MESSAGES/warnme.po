@@ -1,12 +1,12 @@
 # Warn Me Translation template.
-# Copyright (C) 2021 António Manuel Dias
+# Copyright (C) 2012 António Manuel Dias
 # António Manuel Dias <ammdias@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.2\n"
-"POT-Creation-Date: 2021-02-28 17:27+0000\n"
-"PO-Revision-Date: 2021-02-27 11:56+0000\n"
+"Project-Id-Version: 2.3\n"
+"POT-Creation-Date: 2023-12-07 16:25+0000\n"
+"PO-Revision-Date: 2023-12-07 16:30+0000\n"
 "Last-Translator: António Manuel Dias <ammdias@gmail.com>\n"
 "Language-Team: pt_PT <ammdias>\n"
 "MIME-Version: 1.0\n"
@@ -15,159 +15,163 @@ msgstr ""
 "Generated-By: pygettext.py 1.5\n"
 
 
-#: gwarnme.py:78 warnme.py:110
+#: gwarnme.py:71 warnme.py:83
 msgid "Standard notification"
 msgstr "Notificação padrão"
 
-#: gwarnme.py:138
+#: gwarnme.py:131
 msgid ", repeat every %d minutes"
 msgstr ", repete a cada %d minutos"
 
-#: gwarnme.py:174
+#: gwarnme.py:167
 msgid "About"
 msgstr "Sobre"
 
-#: gwarnme.py:245
+#: gwarnme.py:238
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: gwarnme.py:249
+#: gwarnme.py:242
 msgid "_Manual"
 msgstr "_Manual"
 
-#: gwarnme.py:250
+#: gwarnme.py:243
 msgid "F1"
 msgstr "F1"
 
-#: gwarnme.py:255
+#: gwarnme.py:248
 msgid "_About"
 msgstr "_Sobre"
 
-#: gwarnme.py:258
+#: gwarnme.py:251
 msgid "_Warranty"
 msgstr "_Garantia"
 
-#: gwarnme.py:262
+#: gwarnme.py:255
 msgid "_Copyright"
 msgstr "_Licença"
 
-#: gwarnme.py:268
+#: gwarnme.py:261
 msgid "_Quit"
 msgstr "Sai_r"
 
-#: gwarnme.py:269
+#: gwarnme.py:262
 msgid "CTRL+Q"
 msgstr "CTRL+Q"
 
-#: gwarnme.py:272
+#: gwarnme.py:265
 msgid "<Control-Key-q>"
 msgstr "<Control-Key-q>"
 
-#: gwarnme.py:273
+#: gwarnme.py:266
 msgid "<Key-F1>"
 msgstr "<Key-F1>"
 
-#: gwarnme.py:286
+#: gwarnme.py:279
 msgid "Set alarm in"
 msgstr "Alarme daqui a"
 
-#: gwarnme.py:298 gwarnme.py:349
+#: gwarnme.py:291 gwarnme.py:342
 msgid "minutes"
 msgstr "minutos"
 
-#: gwarnme.py:302
+#: gwarnme.py:295
 msgid "Set alarm at"
 msgstr "Alarme às"
 
-#: gwarnme.py:326
+#: gwarnme.py:319
 msgid "hours"
 msgstr "horas"
 
-#: gwarnme.py:330
+#: gwarnme.py:323
 msgid "Message:"
 msgstr "Mensagem:"
 
-#: gwarnme.py:340
+#: gwarnme.py:333
 msgid "Repeat every"
 msgstr "Repetir a cada"
 
-#: gwarnme.py:353
+#: gwarnme.py:346
 msgid "Set alarm"
 msgstr "Activar alarme"
 
-#: gwarnme.py:361
+#: gwarnme.py:354
 msgid "Pending alarms:"
 msgstr "Alarmes pendentes:"
 
-#: gwarnme.py:375
+#: gwarnme.py:368
 msgid "Remove alarm"
 msgstr "Remover alarme"
 
-#: gwmtext.py:67
+#: gwmtext.py:60
 msgid "Close"
 msgstr "Fechar"
 
-#: warnme.py:75
+#: warnme.py:48
 msgid "'at/atq/atrm' utilities not available."
 msgstr "Utilitários 'at/atq/atrm' não disponíveis."
 
-#: warnme.py:88
+#: warnme.py:61
 msgid "'notify-send' utility not available."
 msgstr "Utilitário 'notify-send' não disponível."
 
-#: warnme.py:102
+#: warnme.py:75
 msgid "HH:MM"
 msgstr "HH:MM"
 
-#: warnme.py:103
+#: warnme.py:76
 msgid "hour and minute for the warning."
 msgstr "hora e minuto do alarme."
 
-#: warnme.py:106 warnme.py:114
+#: warnme.py:79 warnme.py:87 wmnotify.py:41
 msgid "MINUTES"
 msgstr "MINUTOS"
 
-#: warnme.py:107
+#: warnme.py:80
 msgid "interval for the warning."
 msgstr "intervalo para o alarme."
 
-#: warnme.py:111
+#: warnme.py:84 wmnotify.py:38
 msgid "Notification text."
 msgstr "Texto da notificação."
 
-#: warnme.py:115
+#: warnme.py:88 wmnotify.py:41
 msgid "repeat interval."
 msgstr "intervalo de repetição."
 
-#: warnme.py:118
+#: warnme.py:91
 msgid "list set alarms."
 msgstr "listar alarmes ativos."
 
-#: warnme.py:121
+#: warnme.py:94
 msgid "ALARM"
 msgstr "ALARME"
 
-#: warnme.py:122
+#: warnme.py:95
 msgid "delete alarm by index."
 msgstr "remover alarme por índice."
 
-#: warnme.py:125
+#: warnme.py:98
 msgid "launch graphical user interface."
 msgstr "lançar interface gráfico."
 
-#: warnme.py:128
+#: warnme.py:101
 msgid "show copyright information."
 msgstr "mostrar licença de utilização."
 
-#: warnme.py:131
+#: warnme.py:104
 msgid "show warranty information."
 msgstr "mostrar garantia."
 
-#: warnme.py:134
+#: warnme.py:107
 msgid "show version information."
 msgstr "mostrar versão do programa."
 
-#: warnme.py:145
+#: warnme.py:110
+msgid "uninstall application."
+msgstr "desinstalar aplicação."
+
+#: warnme.py:124
 msgid ""
 "Proceeding in stand-alone mode:\n"
 "closing the GUI will delete all alarms."
@@ -175,51 +179,51 @@ msgstr ""
 "Prosseguindo em modo autónomo:\n"
 "fechar o programa removerá todos os alarmes."
 
-#: warnme.py:166
+#: warnme.py:145
 msgid "Alarm removed."
 msgstr "Alarme removido."
 
-#: warnme.py:168
+#: warnme.py:147
 msgid "Alarm not found."
 msgstr "Alarme não encontrado."
 
-#: warnme.py:171 warnme.py:178
+#: warnme.py:150 warnme.py:157
 msgid "Conflicting options: '--at/--in'"
 msgstr "Opções conflituantes: '--at/--in'"
 
-#: warnme.py:172 warnme.py:179
+#: warnme.py:151 warnme.py:158
 msgid "Alarm set:"
 msgstr "Alarme configurado:"
 
-#: warnme.py:175 warnme.py:182
+#: warnme.py:154 warnme.py:161
 msgid "Repeat every {} minutes."
 msgstr "Repetir a cada {} minutos."
 
-#: wmat.py:60
+#: wmat.py:51
 msgid "cannot create alarm list file."
 msgstr "não foi possível criar o ficheiro da lista de alarmes."
 
-#: wmat.py:72
+#: wmat.py:63
 msgid "could not append alarm to alarm list file."
 msgstr "não foi possível adicionar o alarme ao ficheiro de alarmes."
 
-#: wmat.py:96
+#: wmat.py:87
 msgid "could not parse 'at' response."
 msgstr "não foi possível processar resposta do programa 'at'."
 
-#: wmat.py:173
+#: wmat.py:164
 msgid "corrupted alarm list file."
 msgstr "ficheiro de alarmes corrompido."
 
-#: wmat.py:182
+#: wmat.py:173
 msgid "could not write to alarm list file."
 msgstr "não foi possível guardar o ficheiro da lista de alarmes."
 
-#: wmcommon.py:42
+#: wmcommon.py:36
 msgid "Error:"
 msgstr "Erro:"
 
-#: wmtext.py:84
+#: wmtext.py:75
 msgid ""
 "From the Preamble of the GNU General Public License:\n"
 "        \n"
@@ -291,7 +295,7 @@ msgstr ""
 "Se não o encontrar, por favor consulte a licença em\n"
 "http://www.gnu.org/licenses/gpl.txt\n"
 
-#: wmtext.py:120
+#: wmtext.py:111
 msgid ""
 "From the GNU General Public License:\n"
 "    \n"
@@ -346,12 +350,12 @@ msgstr ""
 "COM QUAISQUER OUTROS PROGRAMAS), MESMO QUE ESSE TITULAR OU OUTRA PARTE,\n"
 "TENHA SIDO ALERTADA SOBRE A POSSIBILIDADE DE OCORRÊNCIA DESSES DANOS.\n"
 
-#: wmtext.py:147
+#: wmtext.py:138
 msgid ""
 "\n"
 "Warn me\n"
 "\n"
-"Copyright (C) 2021 António Manuel Dias\n"
+"Copyright (C) 2012 António Manuel Dias\n"
 "contact: ammdias@gmail.com\n"
 "\n"
 "This program comes with ABSOLUTELY NO WARRANTY;  for details use command\n"
@@ -405,41 +409,41 @@ msgid ""
 "Command Line Interface\n"
 "======================\n"
 "\n"
-"Command line interface (terminal) accepted commands and syntax:\n"
+"Command line interface (terminal) accepted commands and syntax.\n"
 "\n"
 "* Set alarm at specified interval in minutes:\n"
-"  warnme.py --in <minutes> [--text <message>]\n"
+"  $ warnme --in <minutes> [--text <message>]\n"
 "\n"
 "* Set alarm at specific time:\n"
-"  warnme.py --at <hour:minute> [--text <message>]\n"
+"  $ warnme --at <hour:minute> [--text <message>]\n"
 "\n"
 "* For each of the previous commands, you may also set the recurrence of the\n"
 "  alarms, in minutes:\n"
-"  warnme.py --in <minutes> [--text <message>] --repeat <minutes>\n"
-"  warnme.py --at <hour:minute> [--text <message>] --repeat <minutes>\n"
+"  $ warnme --in <minutes> [--text <message>] --repeat <minutes>\n"
+"  $ warnme --at <hour:minute> [--text <message>] --repeat <minutes>\n"
 "\n"
 "* Show list of alarm IDs and descriptions:\n"
-"  warnme.py --list\n"
+"  $ warnme --list\n"
 "  \n"
 "* Remove alarm identified by alarm ID:\n"
-"  warnme.py --delete <alarm ID>\n"
+"  $ warnme --delete <alarm ID>\n"
 "\n"
 "* Start the graphical user interface:\n"
-"  warnme.py --gui\n"
+"  $ warnme --gui\n"
 "\n"
 "* Print Help, Warranty, Copyright and version information on the terminal:\n"
-"  warnme.py --help\n"
-"  warnme.py --warranty\n"
-"  warnme.py --copyright\n"
-"  warnme.py --version\n"
+"  $ warnme --help\n"
+"  $ warnme --warranty\n"
+"  $ warnme --copyright\n"
+"  $ warnme --version\n"
 "  \n"
-"* Test notification interface:\n"
-"  wmnotify.py <message>\n"
+"* Uninstall application:\n"
+"  $ warnme --uninstall\n"
 msgstr ""
 "\n"
 "Warn me\n"
 "\n"
-"Copyright (C) 2019 António Manuel Dias\n"
+"Copyright (C) 2012 António Manuel Dias\n"
 "contacto: ammdias@gmail.com\n"
 "\n"
 "Este programa é distribuído SEM QUALQUER GARANTIA;  para mais detalhes use o\n"
@@ -493,34 +497,35 @@ msgstr ""
 "\n"
 "Interface de Linha de Comando\n"
 "=============================\n"
+"\n"
 "Comandos da interface de linha de comando (terminal) e sua sintaxe:\n"
 "\n"
 "* Programar um alarme para um determinado intervalo, em minutos:\n"
-"  warnme.py --in <minutos> [--text <mensagem>]\n"
+"  $ warnme --in <minutos> [--text <mensagem>]\n"
 "\n"
 "* Programar um alarme para uma determinada hora:\n"
-"  warnme.py --at <hora:minuto> [--text <mensagem>]\n"
+"  $ warnme --at <hora:minuto> [--text <mensagem>]\n"
 "\n"
 "* Para cada um dos comandos anteriores, pode também programar a recorrência\n"
 "  dos alarmes, em minutos:\n"
-"  warnme.py --in <minutos> [--text <mensagem>] --repeat <minutos>\n"
-"  warnme.py --at <hora:minuto> [--text <mensagem>] --repeat <minutos>\n"
+"  $ warnme --in <minutos> [--text <mensagem>] --repeat <minutos>\n"
+"  $ warnme --at <hora:minuto> [--text <mensagem>] --repeat <minutos>\n"
 "\n"
 "* Mostrar a lista dos identificadores (ID) dos alarmes e suas descrições:\n"
-"  warnme.py --list\n"
+"  $ warnme --list\n"
 "  \n"
 "* Remover alarme identificado pelo seu identificador:\n"
-"  warnme.py --delete <ID do alarme>\n"
+"  $ warnme --delete <ID do alarme>\n"
 "\n"
 "* Iniciar a interface gráfica:\n"
-"  warnme.py --gui\n"
+"  $ warnme --gui\n"
 "\n"
 "* Mostrar informação sobre a Ajuda, Garantia, Licença e versão no terminal:\n"
-"  warnme.py --help\n"
-"  warnme.py --warranty\n"
-"  warnme.py --copyright\n"
-"  warnme.py --version\n"
+"  $ warnme --help\n"
+"  $ warnme --warranty\n"
+"  $ warnme --copyright\n"
+"  $ warnme --version\n"
 "  \n"
-"* Testar interface de notificação:\n"
-"  wmnotify.py <mensagem>\n"
+"* Desinstalar aplicação:\n"
+"  $ warnme --uninstall\n"
 

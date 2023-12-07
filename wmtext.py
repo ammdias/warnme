@@ -1,7 +1,7 @@
 """Warn Me text related stuff
 
 Timed notification program
-Copyright (C) 2021 António Manuel Dias
+Copyright (C) 2012 António Manuel Dias
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,19 +17,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-__version__ = '2.2'
-__date__ = '2021-02-28'
+__version__ = '2.3'
+__date__ = '2023-12-07'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
-
-
-#------------------------------------------------------------------------------
-# Changes history:
-#    2.2 (2021-02-28): changed version text
-#    2.1 (2021-02-27): publishing in GitHub
-#    2.0 (2019-10-01): updated to version 2.0
-#  1.0.1 (2019-09-07): updated version number and date
-#    1.0 (2014-02-23): first version
 
 
 import os
@@ -58,11 +49,11 @@ def labelUnderline(label):
 # Help text
 
 WARNME_NAME = 'Warn me'
-WARNME_VERSION = '2.2'
-WARNME_WEBSITE = 'https://ammdias.duckdns.org/downloads'
-WARNME_WEBSITE_LABEL = 'AMMDIAS'
+WARNME_VERSION = '2.3'
+WARNME_WEBSITE = 'https://github.com/ammdias/warnme'
+WARNME_WEBSITE_LABEL = 'ammdias GitHub'
 WARNME_SHORT_COPYRIGHT = '''Timed notification program
-(C) 2021 António Manuel Dias
+(C) 2012 António Manuel Dias
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -147,7 +138,7 @@ HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 WARNME_HELP = _('''
 Warn me
 
-Copyright (C) 2021 António Manuel Dias
+Copyright (C) 2012 António Manuel Dias
 contact: ammdias@gmail.com
 
 This program comes with ABSOLUTELY NO WARRANTY;  for details use command
@@ -201,34 +192,34 @@ All notifications will be lost if you close the program.
 Command Line Interface
 ======================
 
-Command line interface (terminal) accepted commands and syntax:
+Command line interface (terminal) accepted commands and syntax.
 
 * Set alarm at specified interval in minutes:
-  warnme.py --in <minutes> [--text <message>]
+  $ warnme --in <minutes> [--text <message>]
 
 * Set alarm at specific time:
-  warnme.py --at <hour:minute> [--text <message>]
+  $ warnme --at <hour:minute> [--text <message>]
 
 * For each of the previous commands, you may also set the recurrence of the
   alarms, in minutes:
-  warnme.py --in <minutes> [--text <message>] --repeat <minutes>
-  warnme.py --at <hour:minute> [--text <message>] --repeat <minutes>
+  $ warnme --in <minutes> [--text <message>] --repeat <minutes>
+  $ warnme --at <hour:minute> [--text <message>] --repeat <minutes>
 
 * Show list of alarm IDs and descriptions:
-  warnme.py --list
+  $ warnme --list
   
 * Remove alarm identified by alarm ID:
-  warnme.py --delete <alarm ID>
+  $ warnme --delete <alarm ID>
 
 * Start the graphical user interface:
-  warnme.py --gui
+  $ warnme --gui
 
 * Print Help, Warranty, Copyright and version information on the terminal:
-  warnme.py --help
-  warnme.py --warranty
-  warnme.py --copyright
-  warnme.py --version
+  $ warnme --help
+  $ warnme --warranty
+  $ warnme --copyright
+  $ warnme --version
   
-* Test notification interface:
-  wmnotify.py <message>
+* Uninstall application:
+  $ warnme --uninstall
 ''')

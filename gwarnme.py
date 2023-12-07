@@ -3,7 +3,7 @@
 """Warn Me GUI
 
 Timed notification program
-(C) 2021 António Manuel Dias
+(C) 2012 António Manuel Dias
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -22,13 +22,6 @@ __version__ = '2.1'
 __date__ = '2021-02-27'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
-
-
-#------------------------------------------------------------------------------
-# Changes history:
-#  2.1 (2021-02-27): publishing in GitHub
-#  2.0 (2019-10-13): integration in Warn Me 2.0
-#  1.0-portable (2014-03-14):  first version
 
 
 import os

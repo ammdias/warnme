@@ -2,7 +2,7 @@
  
 Timed notification program
 Use 'at' program to schedule a notification
-(C) 2021 António Manuel Dias
+(C) 2012 António Manuel Dias
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,15 +21,6 @@ __version__ = '2.2'
 __date__ = '2021-02-28'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
-
-
-#------------------------------------------------------------------------------
-# Changes history:
-#    2.2 (2021-02-28): relocated 'at' alar list for multi-user usage
-#    2.1 (2021-02-27): publishing in GitHub
-#    2.0 (2019-10-13): rewrite for Warn Me 2.0
-#  1.0.1 (2019-09-07): moved config directory into .config
-#    1.0 (2014-02-23): first version
 
 
 import os
