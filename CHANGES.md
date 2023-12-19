@@ -5,6 +5,9 @@ Warn Me
 
 Changes list:
 
+    * 2.4 (2023-12-18): Program now respects user's config file install
+                        location setting.
+
     * 2.3.1 (23-12-07): Corrected some bugs in uninstall.
  
     * 2.3 (2023-12-07): Added uninstall option.

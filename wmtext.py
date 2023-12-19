@@ -17,8 +17,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-__version__ = '2.3.1'
-__date__ = '2023-12-07'
+__version__ = '2.4'
+__date__ = '2023-12-18'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
@@ -49,7 +49,7 @@ def labelUnderline(label):
 # Help text
 
 WARNME_NAME = 'Warn me'
-WARNME_VERSION = '2.3.1'
+WARNME_VERSION = '2.4'
 WARNME_WEBSITE = 'https://github.com/ammdias/warnme'
 WARNME_WEBSITE_LABEL = 'ammdias GitHub'
 WARNME_SHORT_COPYRIGHT = '''Timed notification program

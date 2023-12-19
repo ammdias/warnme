@@ -17,8 +17,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>."""
 
-__version__ = '2.2'
-__date__ = '2021-02-28'
+__version__ = '2.4'
+__date__ = '2023-12-18'
 __license__ ='GNU General Public License version 3'
 __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 
@@ -26,7 +26,7 @@ __author__ = 'António Manuel Dias <ammdias@gmail.com>'
 import os
 import sys
 import re
-from subprocess import Popen, PIPE
+import subprocess
 
 from wmtext import _
 from wmcommon import error
@@ -34,16 +34,31 @@ from wmcommon import error
 
 #------------------------------------------------------------------------------
 # Path related constants
-WARNME_DIR = os.path.dirname(__file__)
+WARNME_DIR = sys.path[0]
 WARNME_NOTIFY = os.path.join(WARNME_DIR, 'wmnotify.py')
+WARNME_ALARM_LIST = None
 
-user_dir = os.path.expanduser(os.path.join('~', '.config'))
-if os.path.exists(user_dir):
-    WARNME_ALARM_LIST = os.path.join(user_dir, 'warnme_alarms')
-else:
-    WARNME_ALARM_LIST = os.path.expanduser(os.path_join('~', '.warnme_alarms'))
+# try to get alarm list path from the install log
+try:
+    for i in open(os.path.join(WARNME_DIR, 'install.log')).readlines():
+        ptype, sep, path = i.strip().partition(':')
+        if '' in (ptype, sep, path):
+            break                     # invalid install log: ignore
+        if ptype == 'config_file':
+            WARNME_ALARM_LIST = path
+            break
+except:
+    pass                              # error reading install log: ignore
 
-# Check if alarm list file exists, create it if not
+# check for alarm list in default locations
+if WARNME_ALARM_LIST is None:
+    user_dir = os.path.expanduser(os.path.join('~', '.config'))
+    if os.path.exists(user_dir):
+        WARNME_ALARM_LIST = os.path.join(user_dir, 'warnme_alarms')
+    else:
+        WARNME_ALARM_LIST = os.path.expanduser(os.path_join('~', '.warnme_alarms'))
+
+# check if alarm list file exists, create it if not
 try:
     if not os.path.isfile(WARNME_ALARM_LIST):
         open(WARNME_ALARM_LIST, 'w').write('')
@@ -56,9 +71,9 @@ def _configAlarm(jobId, time, text):
     '''Append alarm to alarm list file.
        Returns string with alarm time and message.
     '''
-    message = '{} {}'.format(time, text)
+    message = f'{time} {text}'
     try:
-        open(WARNME_ALARM_LIST, 'a').write("{}|{}\n".format(jobId, message))
+        open(WARNME_ALARM_LIST, 'a').write(f"{jobId}|{message}\n")
     except:
         error(_('could not append alarm to alarm list file.'), True)
 
@@ -66,19 +81,26 @@ def _configAlarm(jobId, time, text):
 
 
 #------------------------------------------------------------------------------
-def _atCommunicate(atProc, text, repeat):
+def _atCommunicate(args, text, repeat):
     '''Communicate with 'at' proccess to set the notification message,
        decode its output and append alarm to alarm file list.
        Returns string with alarm time and message.'''
-    (dummy, atOutp) = atProc.communicate("{} '{}' -r {}".format(WARNME_NOTIFY,
-                                                                text, repeat))
+    try:
+        msg = f"{WARNME_NOTIFY} '{text}' -r {repeat}".encode(sys.stdin.encoding)
+        res = subprocess.run(args, capture_output=True, input=msg)
+    except Exception as e:
+        error(_("error running 'at' command. Reason:\n{}").format(e), True)
+
+    if res.returncode != 0:
+        e = res.stderr.decode(sys.stdout.encoding).strip() if res.stderr else ''
+        error(_("error running 'at' command. Reason:\n{}").format(e), True)
 
     # atOutp will be something like this:
     #   warning: commands will be executed using /bin/sh
     #   job 9 at Sat Feb 15 18:56:00 2014
     #
     match = re.search('job\s+(\d+) at \w{3} \w{3}\s+\d{1,2} (\d\d:\d\d)',
-                      atOutp,
+                      res.stderr.decode(sys.stdout.encoding),
                       re.IGNORECASE + re.MULTILINE)
     if match:
         (jobId, time) = match.group(1,2)
@@ -93,9 +115,16 @@ def _listSetAlarms():
     '''Call 'atq' to get list of 'at' job IDs.
        Returns list of strings with job IDs.
     '''
-    p = Popen('atq', stdout=PIPE, universal_newlines=True)
-    atOutp = p.stdout.read().split('\n')
-    p.terminate()
+    try:
+        res = subprocess.run('atq', capture_output=True)
+    except Exception as e:
+        error(_("error running 'atq' command. Reason:\n{}").format(e), True)
+
+    if res.returncode != 0:
+        e = res.stderr.decode(sys.stdout.encoding).strip() if res.stderr else ''
+        error(_("error running 'atq' command. Reason:\n{}").format(e), True)
+
+    atOutp = res.stdout.decode(sys.stdout.encoding).split('\n')
 
     # atOutp will be something like this:
     # [ '13\tSun Feb 16 19:01:00 2014 a antonio',
@@ -111,10 +140,8 @@ def setAlarmFromNow(timeLapse, text, repeat):
        message and append alarm to alarm file list.
        Returns string with alarm time and message.
     '''
-    atProc = Popen(('at', 'now', '+ {} minutes'.format(timeLapse)),
-                   stdin=PIPE, stdout=PIPE, stderr=PIPE,
-                   universal_newlines=True)
-    return _atCommunicate(atProc, text, repeat)
+    args = ('at', 'now', f'+ {timeLapse} minutes')
+    return _atCommunicate(args, text, repeat)
 
 
 #------------------------------------------------------------------------------
@@ -123,10 +150,8 @@ def setAlarmAtTime(atTime, text, repeat):
        and appen alarm to alarm file list.
        Returns string with alarm time and message.
     '''
-    atProc = Popen(('at', atTime),
-                   stdin=PIPE, stdout=PIPE, stderr=PIPE,
-                   universal_newlines=True)
-    return _atCommunicate(atProc, text, repeat)
+    args = ('at', atTime)
+    return _atCommunicate(args, text, repeat)
 
 
 #------------------------------------------------------------------------------
@@ -134,14 +159,12 @@ def removeAlarm(jobId):
     '''Call 'atrm' to remove jobId from 'at' jobs.
        Returns True on successful removal, False otherwise (job was not found).
     '''
-    p = Popen(['atrm', jobId], stderr=PIPE, universal_newlines=True)
-    atOutp = p.stderr.read()
-    p.terminate()
+    try:
+        res = subprocess.run(['atrm', jobId])
+    except Exception as e:
+        error(_("error running 'atrm' command. Reason:\n{}").format(e), True)
 
-    # atOutp will be empty if alarm was removed or something like this if not:
-    #   Cannot find jobid 11
-    #
-    return atOutp == ''
+    return res.returncode == 0
 
 
 #------------------------------------------------------------------------------

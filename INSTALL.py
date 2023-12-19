@@ -37,13 +37,20 @@ def _rollback():
     '''Roll back installation.
     '''
     try:
+        ignore_config_files = False
         for ptype, path in INSTALL_LOG:
             match ptype:
                 case 'dir':
                     shutil.rmtree(path)
                 case 'link':
                     os.remove(path)
+                case 'config_dir':
+                    if yesno(f"Remove settings directory '{path}'?"):
+                        shutil.rmtree(path)
+                        ignore_config_files = True
                 case 'config_file':
+                    if ignore_config_files:
+                        continue
                     if yesno(f"Remove configuration file '{path}'?"):
                         os.remove(path)
                 case _:
@@ -206,12 +213,14 @@ try:
         try:
             print('Creating configuration files directory...')
             os.makedirs(CONFIG_DIR, exist_ok=True)
+            if APP_NAME in CONFIG_DIR:
+                _log('config_dir', CONFIG_DIR)
             print('Copying necessary configuration files:')
             for i in CONFIG_FILES:
                 if not os.path.exists(os.path.join(CONFIG_DIR, i)):
                     print(f'... {i}')
                     shutil.copy2(os.path.join(PKG_DIR, i), CONFIG_DIR) 
-                    _log('config_file', os.path.join(CONFIG_DIR, i))
+                _log('config_file', os.path.join(CONFIG_DIR, i))
         except Exception as e:
             _quit(f"Could not copy configuration files. Reason:\n{e}")
 
@@ -227,8 +236,11 @@ try:
     print('\nApplication successfully installed.\n')
 
 
+except KeyboardInterrupt:
+    print("\nInstallation interrupted by user.\n", file=sys.stderr)
+    _rollback()
+
 except Exception as e:
-    print(e, file=sys.stderr)
-    print("\nInstallation interrupted by user or unknown error.\n", file=sys.stderr)
+    print(f"\nUnexpected error:\n{e}\n", file=sys.stderr)
     _rollback()
 

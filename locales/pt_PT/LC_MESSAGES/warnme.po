@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 2.3\n"
-"POT-Creation-Date: 2023-12-07 16:25+0000\n"
+"POT-Creation-Date: 2023-12-18 20:36+0000\n"
 "PO-Revision-Date: 2023-12-07 16:30+0000\n"
 "Last-Translator: António Manuel Dias <ammdias@gmail.com>\n"
 "Language-Team: pt_PT <ammdias>\n"
@@ -199,23 +199,44 @@ msgstr "Alarme configurado:"
 msgid "Repeat every {} minutes."
 msgstr "Repetir a cada {} minutos."
 
-#: wmat.py:51
+#: wmat.py:66
 msgid "cannot create alarm list file."
 msgstr "não foi possível criar o ficheiro da lista de alarmes."
 
-#: wmat.py:63
+#: wmat.py:78
 msgid "could not append alarm to alarm list file."
 msgstr "não foi possível adicionar o alarme ao ficheiro de alarmes."
 
-#: wmat.py:87
+#: wmat.py:92 wmat.py:96
+msgid ""
+"error running 'at' command. Reason:\n"
+"{}"
+msgstr "erro ao executar o comando 'at'. Motivo\n"
+"{}"
+
+#: wmat.py:109
 msgid "could not parse 'at' response."
 msgstr "não foi possível processar resposta do programa 'at'."
 
-#: wmat.py:164
+#: wmat.py:121 wmat.py:125
+msgid ""
+"error running 'atq' command. Reason:\n"
+"{}"
+msgstr "erro ao executar o comando 'atq'. Motivo:\n"
+"{}"
+
+#: wmat.py:165
+msgid ""
+"error running 'atrm' command. Reason:\n"
+"{}"
+msgstr "erro ao executar o comando 'atrm'. Motivo:\n"
+"{}"
+
+#: wmat.py:187
 msgid "corrupted alarm list file."
 msgstr "ficheiro de alarmes corrompido."
 
-#: wmat.py:173
+#: wmat.py:196
 msgid "could not write to alarm list file."
 msgstr "não foi possível guardar o ficheiro da lista de alarmes."
 

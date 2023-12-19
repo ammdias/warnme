@@ -1,10 +1,10 @@
 '''Configuration file for the Warnme installation script.
 '''
 
-DOC = 'Installation script for Warn Me.'''
+DOC = 'Installation script for Warn Me.'
 COPYRIGHT_YEAR = '2012'
-VERSION = '2.3.1'
-DATE = '#TODO'
+VERSION = '2.4'
+DATE = '2023-12-16'
 AUTHOR = 'António Manuel Dias <ammdias@gmail.com>'
 LICENSE = '''
 This program is free software: you can redistribute it and/or modify
